@@ -1,0 +1,42 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#terminal {
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#output {
+    white-space: pre; /* Mantener espacios y saltos de línea */
+}
+
+#input {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #ffffff;
+    outline: none;
+}
+
+#suggestions {
+    background: #333;
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    width: calc(100% - 40px);
+}
+
+.suggestion {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background: #444;
+}
