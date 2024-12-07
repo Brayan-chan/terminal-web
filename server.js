@@ -133,7 +133,7 @@ app.post('/execute', (req, res) => {
 });
 
 app.get('/commands', (req, res) => {
-    // Puedes agregar más comandos aquí
+  
     const availableCommands = [
         'help', 'clear', 'echo', 'cd', 'mkdir', 'code .', 'ls', 'pwd', 'cat', 'rm', 'mv', 'cp', 'touch'];
     res.json(availableCommands);
